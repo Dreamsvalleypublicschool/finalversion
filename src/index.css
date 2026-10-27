@@ -1,0 +1,179 @@
+@import "tailwindcss";
+
+@layer base {
+  html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #101E53;
+    color: #FFFFFF;
+    line-height: 1.6;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Manrope', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #FFFFFF;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+  }
+}
+
+.font-heading {
+  font-family: 'Manrope', 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+.font-body {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.font-hindi {
+  font-family: 'Noto Sans Devanagari', 'Inter', sans-serif;
+}
+
+/* Modern Swiss Grid & Glassmorphism Utilities */
+.soft-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 1.125rem;
+  box-shadow: 
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.2),
+    0 8px 32px 0 rgba(0, 0, 0, 0.28);
+  color: #FFFFFF;
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.soft-card-interactive {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 1.125rem;
+  box-shadow: 
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.2),
+    0 8px 32px 0 rgba(0, 0, 0, 0.28);
+  color: #FFFFFF;
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+}
+
+.soft-card-interactive:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.13);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.3),
+    0 16px 40px 0 rgba(0, 0, 0, 0.38);
+}
+
+.soft-shadow-sm {
+  box-shadow: 0 1px 2px 0 rgba(23, 43, 115, 0.04);
+}
+
+.soft-shadow-md {
+  box-shadow: 0 4px 14px -2px rgba(23, 43, 115, 0.06), 0 2px 6px -1px rgba(23, 43, 115, 0.03);
+}
+
+.soft-shadow-lg {
+  box-shadow: 0 12px 32px -4px rgba(23, 43, 115, 0.08), 0 4px 12px -2px rgba(23, 43, 115, 0.04);
+}
+
+.soft-shadow-xl {
+  box-shadow: 0 20px 40px -8px rgba(23, 43, 115, 0.12), 0 6px 16px -3px rgba(23, 43, 115, 0.05);
+}
+
+/* Swiss Grid Clean Border System */
+.border-light {
+  border-color: #E1E7F0;
+}
+
+.bg-soft-canvas {
+  background-color: #F3F6FB;
+}
+
+.text-navy {
+  color: #172B73;
+}
+
+.bg-navy {
+  background-color: #172B73;
+}
+
+.text-orange {
+  color: #F4511E;
+}
+
+.bg-orange {
+  background-color: #F4511E;
+}
+
+.text-forest {
+  color: #FF7A00;
+}
+
+.bg-forest {
+  background-color: #FF7A00;
+}
+
+.text-charcoal {
+  color: #253044;
+}
+
+/* Primary Admissions Button */
+.btn-admissions {
+  background-color: #F4511E;
+  color: #FFFFFF;
+  font-weight: 600;
+  border-radius: 0.625rem;
+  box-shadow: 0 4px 14px 0 rgba(244, 81, 30, 0.28);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-admissions:hover {
+  background-color: #E03E0B;
+  box-shadow: 0 6px 20px 0 rgba(244, 81, 30, 0.38);
+  transform: translateY(-1px);
+}
+
+.btn-admissions:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px 0 rgba(244, 81, 30, 0.2);
+}
+
+/* Secondary Navy Button */
+.btn-navy {
+  background-color: #172B73;
+  color: #FFFFFF;
+  font-weight: 600;
+  border-radius: 0.625rem;
+  box-shadow: 0 4px 14px 0 rgba(23, 43, 115, 0.2);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-navy:hover {
+  background-color: #101E53;
+  box-shadow: 0 6px 20px 0 rgba(23, 43, 115, 0.3);
+  transform: translateY(-1px);
+}
+
+/* Neutralize unwanted orange shine / focus-visible or interactive outline ring on tabs, cards & buttons */
+button:focus,
+button:focus-visible,
+a:focus,
+a:focus-visible,
+[role="tab"]:focus,
+[role="tab"]:focus-visible,
+.soft-card-interactive:focus,
+.soft-card-interactive:focus-visible,
+.magic-bento__card:focus,
+.magic-bento__card:focus-visible {
+  outline: none !important;
+}
+
+button:focus-visible {
+  outline: 2px solid transparent !important;
+  outline-offset: 0 !important;
+}

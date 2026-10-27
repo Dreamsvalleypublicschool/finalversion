@@ -1,0 +1,22 @@
+.animated-content {
+  position: relative;
+  will-change: transform, opacity;
+  box-sizing: border-box;
+}
+
+.animated-content--tilt {
+  perspective: 1200px;
+  transform-style: preserve-3d;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animated-content,
+  .animated-content * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    transform: none !important;
+    opacity: 1 !important;
+    filter: none !important;
+  }
+}

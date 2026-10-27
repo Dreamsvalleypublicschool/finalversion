@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 96" width="480" height="96">
+  <defs>
+    <linearGradient id="strapGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0e1738" />
+      <stop offset="25%" stop-color="#172B73" />
+      <stop offset="75%" stop-color="#172B73" />
+      <stop offset="100%" stop-color="#0e1738" />
+    </linearGradient>
+  </defs>
+  <rect width="480" height="96" fill="url(#strapGrad)" />
+  <line x1="0" y1="8" x2="480" y2="8" stroke="#F4511E" stroke-width="4" />
+  <line x1="0" y1="88" x2="480" y2="88" stroke="#F4511E" stroke-width="4" />
+  <text x="240" y="54" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="20" fill="#ffffff" text-anchor="middle" letter-spacing="3">
+    ★ DREAMS VALLEY PUBLIC SCHOOL ★
+  </text>
+</svg>

@@ -1,0 +1,6 @@
+{
+  "name": "Dreams Valley Public School Ichol",
+  "description": "Dreams Valley Public School (English Medium), Ichol, Satna (M.P.). Under Gaharwar Educational & Welfare Society. Fostering academic excellence, moral values, and holistic child development.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
